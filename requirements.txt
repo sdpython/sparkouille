@@ -1,0 +1,10 @@
+chardet
+coverage
+guzzle_sphinx_theme
+jyquickhelper
+pyquickhelper>=1.7.2508
+pyspark
+sphinx-redactor-theme
+sphinxjp.themes.basicstrap
+sphinxjp.themes.sphinxjp
+wheel

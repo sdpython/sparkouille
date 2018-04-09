@@ -1,0 +1,11 @@
+cffi
+Cython
+datashape
+jupyter
+matplotlib
+notebook>=5.0.0
+numba
+numpy>=1.11.0
+scikit-learn
+scipy
+Sphinx
