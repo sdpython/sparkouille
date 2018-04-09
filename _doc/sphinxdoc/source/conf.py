@@ -43,6 +43,13 @@ language = "en"
 
 mathdef_link_only = True
 
+epkg_dictionary['hadoop'] = 'https://fr.wikipedia.org/wiki/Hadoop'
+epkg_dictionary['HIVE'] = 'https://fr.wikipedia.org/wiki/Apache_Hive'
+epkg_dictionary['Hive'] = 'https://fr.wikipedia.org/wiki/Apache_Hive'
+epkg_dictionary['map/reduce'] = 'https://fr.wikipedia.org/wiki/MapReduce'
+epkg_dictionary['PIG'] = 'https://fr.wikipedia.org/wiki/Apache_Pig'
+epkg_dictionary['presto'] = 'https://prestodb.io/'
 epkg_dictionary['pyspark'] = 'https://spark.apache.org/docs/latest/api/python/index.html'
 epkg_dictionary['Spark'] = "https://spark.apache.org/"
 epkg_dictionary['spark'] = "https://spark.apache.org/"
+epkg_dictionary['SQL'] = 'https://fr.wikipedia.org/wiki/Structured_Query_Language'

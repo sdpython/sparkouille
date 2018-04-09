@@ -14,7 +14,7 @@ sparkouille
     :target: https://travis-ci.org/sdpython/sparkouille
     :alt: Build status
 
-.. image:: https://ci.appveyor.com/api/projects/status/g8chk1ufyk1m8uep?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/chiwkjr9li91qd02?svg=true
     :target: https://ci.appveyor.com/project/sdpython/sparkouille
     :alt: Build Status Windows
 
@@ -47,9 +47,12 @@ sparkouille
     :target: http://www.xavierdupre.fr/app/sparkouille/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
+Lectures, notebooks, helpers pour :epkg:`Spark`.
+
 .. toctree::
     :maxdepth: 1
 
+    lectures/index
     tutorial/index
     api/index
     i_index

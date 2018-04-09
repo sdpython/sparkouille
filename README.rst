@@ -8,7 +8,7 @@ README
     :target: https://travis-ci.org/sdpython/sparkouille
     :alt: Build status
 
-.. image:: https://ci.appveyor.com/api/projects/status/g8chk1ufyk1m8uep?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/chiwkjr9li91qd02?svg=true
     :target: https://ci.appveyor.com/project/sdpython/sparkouille
     :alt: Build Status Windows
 
