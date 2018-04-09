@@ -1,5 +1,6 @@
 cffi
 Cython
+cytoolz
 datashape
 jupyter
 matplotlib
