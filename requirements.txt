@@ -10,3 +10,5 @@ sphinx-redactor-theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 wheel
+yahoo_historical
+
