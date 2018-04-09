@@ -146,7 +146,6 @@ csx
 AppPackages/
 
 # Others
-sql/
 *.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*
@@ -229,9 +228,6 @@ out_*
 */sphinxdoc/source/LICENSE.txt
 */sphinxdoc/source/filechanges.*
 version.txt
-_doc/sphinxdoc/source/python_template/*box.html
-_doc/sphinxdoc/source/python_template/*toc.html
-_doc/sphinxdoc/source/jyquickhelper/
 _doc/sphinxdoc/source/coverage/*
 */sphinxdoc/source/all*.rst
 _doc/sphinxdoc/source/notebooks/*
@@ -259,13 +255,6 @@ _doc/sphinxdoc/require.js
 ex.*
 m.temp
 _doc/notebooks/*/.ipynb_checkpoints
-_doc/notebooks/nlp/frwiki-latest-all-titles-in-ns0
-_doc/notebooks/nlp/sample*.txt
-_doc/notebooks/nlp/completion.prof
-_doc/notebooks/nlp/profile.png
-_doc/notebooks/nlp/completion.dot
-_doc/notebooks/nlp/completion.png
-_doc/notebooks/nlp/completion.pstat
 _unittests/run_unittests.py.out
 *.err
 _doc/sphinxdoc/source/phdoc_static/style_notebook_snippet.css
@@ -276,3 +265,4 @@ _doc/notebooks/example.test.txt
 _doc/notebooks/example.txt
 _doc/notebooks/example.train.txt
 _doc/notebooks/simages/
+_doc/notebooks/sql/MSFT.*.txt

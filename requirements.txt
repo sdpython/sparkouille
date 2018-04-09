@@ -3,6 +3,7 @@ coverage
 guzzle_sphinx_theme
 jyquickhelper
 pyensae
+pymyinstall
 pyquickhelper>=1.7.2508
 pyspark
 sphinx-redactor-theme
