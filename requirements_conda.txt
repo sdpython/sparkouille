@@ -9,3 +9,4 @@ numpy>=1.11.0
 scikit-learn
 scipy
 Sphinx
+statsmodels

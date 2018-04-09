@@ -2,8 +2,8 @@
 .. |gitlogo| image:: _static/git_logo.png
              :height: 20
 
-sparkouille
-===========
+Spark approximatif
+==================
 
 **Links:** `github <https://github.com/sdpython/sparkouille/>`_,
 `documentation <http://www.xavierdupre.fr/app/sparkouille/helpsphinx/index.html>`_,
