@@ -1,0 +1,17 @@
+
+.. blogpost::
+    :title: Streaming et pipelines
+    :keywords: streaming, pipelines
+    :date: 2018-04-10
+    :categories: références
+
+    Deux pages qui recensent de nombreuses libraires
+    qui permettent de créer des pipelines et plus
+    généralement de traiter les données en parallèles :
+
+    * `Awesome Pipeline <https://github.com/pditommaso/awesome-pipeline>`_
+    * `Awesome Streaming <https://github.com/manuzhang/awesome-streaming>`_
+
+    Une dernière page sur d'autres options :
+
+    * `Awesome Nextflow <https://github.com/nextflow-io/awesome-nextflow>`_

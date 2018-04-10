@@ -52,7 +52,10 @@ Lectures, notebooks, helpers pour :epkg:`Spark`.
 .. toctree::
     :maxdepth: 1
 
-    lectures/index
+    lectures/index_progfonc
+    lectures/index_spark
+    lectures/index_sql
+    lectures/index_pig
     tutorial/index
     api/index
     i_index

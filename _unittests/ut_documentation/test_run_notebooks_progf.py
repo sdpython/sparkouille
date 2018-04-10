@@ -51,18 +51,17 @@ except ImportError:
 
 
 import src.sparkouille
-import pymyinstall
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.ipythonhelper import test_notebook_execution_coverage
 from pyquickhelper.pycode import add_missing_development_version
 
 
-class TestFunctionTestNotebookSql(unittest.TestCase):
+class TestFunctionTestNotebookProgf(unittest.TestCase):
 
     def setUp(self):
         add_missing_development_version(["jyquickhelper"], __file__, hide=True)
 
-    def test_notebook_example_sql(self):
+    def test_notebook_example_progf_reservoir(self):
         fLOG(
             __file__,
             self._testMethodName,
@@ -70,12 +69,11 @@ class TestFunctionTestNotebookSql(unittest.TestCase):
 
         self.assertTrue(src.sparkouille is not None)
         folder = os.path.join(os.path.dirname(__file__),
-                              "..", "..", "_doc", "notebooks", "sql")
-        test_notebook_execution_coverage(__file__, "sql", folder,
-                                         this_module_name="sparkouille", fLOG=fLOG,
-                                         copy_files=["README.txt"], modules=[pymyinstall])
+                              "..", "..", "_doc", "notebooks", "progf")
+        test_notebook_execution_coverage(__file__, "reservoir", folder,
+                                         this_module_name="sparkouille", fLOG=fLOG)
 
-    def test_notebook_example_timeseries(self):
+    def test_notebook_example_progf_skewed(self):
         fLOG(
             __file__,
             self._testMethodName,
@@ -83,10 +81,9 @@ class TestFunctionTestNotebookSql(unittest.TestCase):
 
         self.assertTrue(src.sparkouille is not None)
         folder = os.path.join(os.path.dirname(__file__),
-                              "..", "..", "_doc", "notebooks", "sql")
-        test_notebook_execution_coverage(__file__, "sql", folder,
-                                         this_module_name="sparkouille", fLOG=fLOG,
-                                         copy_files=["README.txt"], modules=[pymyinstall])
+                              "..", "..", "_doc", "notebooks", "progf")
+        test_notebook_execution_coverage(__file__, "skewed", folder,
+                                         this_module_name="sparkouille", fLOG=fLOG)
 
 
 if __name__ == "__main__":

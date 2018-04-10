@@ -2,17 +2,6 @@
 Introduction à Spark
 ====================
 
-Map Reduce
-++++++++++
-
-.. toctree::
-    :maxdepth: 1
-
-    ../notebooks/map_reduce_timeseries
-
-Spark
-+++++
-
 .. toctree::
     :maxdepth: 1
 

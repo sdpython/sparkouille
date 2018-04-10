@@ -272,3 +272,8 @@ _doc/notebooks/spark_local/metastore_db/*
 _doc/notebooks/spark_local/out/*
 _doc/notebooks/spark_local/fichier.out*
 _doc/notebooks/spark_local/data_adult.txt
+_doc/notebooks/sql/mortalite.txt.remove.txt
+_doc/notebooks/sql/mortalite.txt
+_doc/notebooks/sql/demo_mlifetable.tsv
+_doc/notebooks/sql/demo_mlifetable.tsv.gz
+_doc/notebooks/sql/mortalite.db3
