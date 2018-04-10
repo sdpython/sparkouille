@@ -266,3 +266,9 @@ _doc/notebooks/example.txt
 _doc/notebooks/example.train.txt
 _doc/notebooks/simages/
 _doc/notebooks/sql/MSFT.*.txt
+_doc/notebooks/spark_local/data_adult.schema.parquet/*
+_doc/notebooks/spark_local/adult.txt
+_doc/notebooks/spark_local/metastore_db/*
+_doc/notebooks/spark_local/out/*
+_doc/notebooks/spark_local/fichier.out*
+_doc/notebooks/spark_local/data_adult.txt
