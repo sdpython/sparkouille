@@ -6,3 +6,10 @@ FAQ
 
 .. contents::
     :local:
+
+Programmation fonctionnelle
++++++++++++++++++++++++++++
+
+.. faqreflist::
+    :content:
+    :tag: progfonc

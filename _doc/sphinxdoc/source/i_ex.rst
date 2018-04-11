@@ -1,5 +1,15 @@
 
 .. _l-EX2:
 
-Examples
+Exemples
 ========
+
+.. contents::
+    :local:
+
+Programmation fonctionnelle
++++++++++++++++++++++++++++
+
+.. exreflist::
+    :content:
+    :tag: progfonc

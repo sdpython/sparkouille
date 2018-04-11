@@ -1,0 +1,44 @@
+
+.. blogpost::
+    :title: Sujets abordés en introduction à Spark
+    :keywords: spark, programmation fonctionnelle
+    :date: 2018-04-09
+    :categories: références
+
+    *Partie 1 : programmation fonctionnelle*
+
+    * notion de
+      :func:`mapper <sparkouille.fctmr.simplefctmr.mapper>`,
+      :func:`filter <sparkouille.fctmr.simplefctmr.filter>`,
+      :func:`reducer <sparkouille.fctmr.simplefctmr.mapper>` (group by),
+      :func:`combiner <sparkouille.fctmr.simplefctmr.combiner>`
+    * exemple détailler avec un mapper, suivi d'un reducer, suivi d'un mapper
+    * pourquoi trier localement pour un reducer
+    * coûts associés (calcul + mémoire) pour les quatre
+      primitives pour une exécution locale dans deux cas :
+      parcourir la liste complète, obtenir le premier élément
+    * pourquoi la programmation fonctionnelle est adaptée
+      à la distribution des calculs
+    * stratégie de distribution
+    * coûts associés (calcul + mémoire) pour les quatre
+      primitives pour une exécution locale dans deux cas :
+      parcourir la liste complète, obtenir le premier élément
+    * notion de reducer récursif : cas de la somme et de la moyenne
+    * introduction des termes : lazy evaluation, index
+
+    *Partie 2 : exemples et Spark*
+
+    * Enlever les doublons dans une base de données
+      (code postal, nom, téléphone), sont considérés comme doublons
+      deux entités qui ont au moins deux champs en commun (sur trois)
+    * lien vers installation en local : :ref:`l-install-spark`
+    * exécution de :ref:`sparkfirststepsrst`
+
+    Enfin, quelques lignes sur :
+
+    * travail de recherche et streams intermédiaires
+    * GDPR
+
+    Oublis :
+
+    * le hasard en distribué

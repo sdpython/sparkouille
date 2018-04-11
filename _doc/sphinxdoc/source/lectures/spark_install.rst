@@ -1,4 +1,6 @@
 
+.. _l-install-spark:
+
 Installation de Spark en local
 ==============================
 
