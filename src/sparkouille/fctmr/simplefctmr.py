@@ -159,11 +159,14 @@ def combiner(fctkey1, gen1, fctkey2, gen2, how='inner'):
             :showcode:
 
             from sparkouille.fctmr import combiner
+
+            def c0(el):
+                return el[0]
+
             ens1 = [('a', 1), ('b', 2), ('a', 3)]
             ens2 = [('a', 10), ('b', 20), ('a', 30)]
             res = combiner(c0, ens1, c0, ens2)
             print(list(res))
-
     """
     gr1 = reducer(fctkey1, gen1, asiter=True, sort=True)
     gr2 = reducer(fctkey2, gen2, asiter=False, sort=True)
