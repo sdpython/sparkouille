@@ -11,5 +11,5 @@ Programmation fonctionnelle
 +++++++++++++++++++++++++++
 
 .. exreflist::
-    :content:
+    :contents:
     :tag: progfonc

@@ -8,10 +8,10 @@
     *Partie 1 : programmation fonctionnelle*
 
     * notion de
-      :func:`mapper <sparkouille.fctmr.simplefctmr.mapper>`,
-      :func:`filter <sparkouille.fctmr.simplefctmr.filter>`,
-      :func:`reducer <sparkouille.fctmr.simplefctmr.mapper>` (group by),
-      :func:`combiner <sparkouille.fctmr.simplefctmr.combiner>`
+      :func:`map <sparkouille.fctmr.simplefctmr.mapper>`,
+      :func:`filter <sparkouille.fctmr.simplefctmr.ffilter>`,
+      :func:`reduce <sparkouille.fctmr.simplefctmr.mapper>` (group by),
+      :func:`combine <sparkouille.fctmr.simplefctmr.combiner>` (ou join)
     * exemple détailler avec un mapper, suivi d'un reducer, suivi d'un mapper
     * pourquoi trier localement pour un reducer
     * coûts associés (calcul + mémoire) pour les quatre

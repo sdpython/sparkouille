@@ -27,7 +27,7 @@ def mapper(fct, gen):
 
     .. faqref::
         :title: Différence entre un itérateur et un générateur ?
-        :tag: progfonc
+        :tag: faqprogfonc
 
         Un :epkg:`itérateur` et un :epkg:`générateur` produisent
         tous deux des éléments issus d'un ensemble. La différence
@@ -40,7 +40,19 @@ def mapper(fct, gen):
         seconde fois. Le coût est imprévisible et parfois il est
         préférable de :epkg:`cacher` les éléments pour le parcourir
         plusieurs fois : cela revient à transformer un :epkg:`générateur`
-        en :epkg:`itérateur`.
+        en :epkg:`itérateur`. Un générateur est souvent défini comme suit
+        en :epkg:`Python` :
+
+        .. runpython::
+            :showcode:
+
+            def generate(some_iterator):
+                for el in some_iterator:
+                    yield el
+
+            g = generate([4, 5])
+            print(list(g))
+            print(g.__class__.__name__)
     """
     return map(fct, gen)
 

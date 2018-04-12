@@ -11,5 +11,5 @@ Programmation fonctionnelle
 +++++++++++++++++++++++++++
 
 .. faqreflist::
-    :content:
-    :tag: progfonc
+    :contents:
+    :tag: faqprogfonc

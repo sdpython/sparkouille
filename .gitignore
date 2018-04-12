@@ -277,3 +277,4 @@ _doc/notebooks/sql/mortalite.txt
 _doc/notebooks/sql/demo_mlifetable.tsv
 _doc/notebooks/sql/demo_mlifetable.tsv.gz
 _doc/notebooks/sql/mortalite.db3
+_doc/sphinxdoc/source/nbcov-*.png
