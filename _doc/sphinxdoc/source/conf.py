@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import sys
 import os
 import datetime
@@ -50,12 +50,15 @@ epkg_dictionary['ENSAE'] = 'http://www.ensae.fr/'
 epkg_dictionary['Eurostat'] = 'https://data.europa.eu/euodp/fr/data/publisher/estat'
 epkg_dictionary[
     'générateur'] = 'https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9rateur_(informatique)'
+epkg_dictionary['GIL'] = 'http://www.xavierdupre.fr/app/teachpyx/helpsphinx/notebooks/gil_example.html'
 epkg_dictionary['hadoop'] = 'https://fr.wikipedia.org/wiki/Hadoop'
 epkg_dictionary['HortonWorks'] = 'https://fr.hortonworks.com/'
 epkg_dictionary['HIVE'] = 'https://fr.wikipedia.org/wiki/Apache_Hive'
 epkg_dictionary['Hive'] = 'https://fr.wikipedia.org/wiki/Apache_Hive'
 epkg_dictionary['itérateur'] = 'https://fr.wikipedia.org/wiki/It%C3%A9rateur'
+epkg_dictionary['Kaggle'] = 'https://www.kaggle.com/'
 epkg_dictionary['map/reduce'] = 'https://fr.wikipedia.org/wiki/MapReduce'
+epkg_dictionary['numba'] = 'https://numba.pydata.org/'
 epkg_dictionary['PIG'] = 'https://fr.wikipedia.org/wiki/Apache_Pig'
 epkg_dictionary['pyenbc'] = 'http://www.xavierdupre.fr/app/pyenbc/helpsphinx/index.html'
 epkg_dictionary['presto'] = 'https://prestodb.io/'

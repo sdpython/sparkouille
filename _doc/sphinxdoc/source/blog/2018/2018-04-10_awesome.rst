@@ -15,3 +15,8 @@
     Une dernière page sur d'autres options :
 
     * `Awesome Nextflow <https://github.com/nextflow-io/awesome-nextflow>`_
+
+    Enfin, un lien sur des notebooks en :epkg:`pyspark`
+    sur la compétition :epkg:`Kaggle` :
+    `2014 New York City Taxi Trips <https://www.kaggle.com/kentonnlp/2014-new-york-city-taxi-trips>`_ :
+    `Vue d'ensemble de la science des données à l'aide de Spark sur Azure HDInsight <https://docs.microsoft.com/fr-fr/azure/machine-learning/team-data-science-process/spark-overview>`_.

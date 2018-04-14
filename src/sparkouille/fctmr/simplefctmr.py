@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 @file
 @brief Simple *mapper* and *reducer* implemented in :epkg:`Python`

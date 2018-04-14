@@ -37,7 +37,7 @@
     Enfin, quelques lignes sur :
 
     * travail de recherche et streams intermédiaires
-    * GDPR
+    * `RGPD - Règlement Général sur la Protection des Données <https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es>`_
 
     Oublis :
 
