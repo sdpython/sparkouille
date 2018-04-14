@@ -25,6 +25,7 @@
       parcourir la liste complète, obtenir le premier élément
     * notion de reducer récursif : cas de la somme et de la moyenne
     * introduction des termes : lazy evaluation, index
+    * notebook :ref:`recursivereducersrst`
 
     *Partie 2 : exemples et Spark*
 

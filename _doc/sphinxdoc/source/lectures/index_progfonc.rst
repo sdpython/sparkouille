@@ -25,6 +25,7 @@ langages.
 .. toctree::
     :maxepth: 1
 
+    ../notebooks/recursive_reducers
     ../notebooks/reservoir_sampling
     ../notebooks/skewed_dataset
     ../notebooks/skewed_dataset_correction
