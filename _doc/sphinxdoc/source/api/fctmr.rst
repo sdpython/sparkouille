@@ -1,4 +1,6 @@
 
+.. _l-api-mapper-reducer:
+
 Mapper and Reducer
 ==================
 

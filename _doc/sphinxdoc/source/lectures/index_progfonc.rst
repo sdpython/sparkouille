@@ -11,6 +11,20 @@ dans un langage et une syntaxe impérative.
 Introductions aux mappers et aux reducers
 +++++++++++++++++++++++++++++++++++++++++
 
+Même s'il n'est pas utilisé pour implémenter
+des framework map/reduce car beaucoup trop lent
+et surtout très difficile à parlléliser,
+le langage :epkg:`python` permet néanmoins de
+découvrir les concepts de bases d'un tel système.
+Ce module implémenté des fonctions non parallélisées,
+:ref:`l-api-mapper-reducer` pour illustrer les concepts
+de mapperrs, reducers, combiners.
+
+.. toctree::
+    :maxdepth: 1
+
+    ../notebooks/recursive_reducers
+
 Algorithmes
 +++++++++++
 
@@ -23,9 +37,8 @@ théoriques que pratiques à moins de passer à d'autres
 langages.
 
 .. toctree::
-    :maxepth: 1
+    :maxdepth: 1
 
-    ../notebooks/recursive_reducers
     ../notebooks/reservoir_sampling
     ../notebooks/skewed_dataset
     ../notebooks/skewed_dataset_correction
