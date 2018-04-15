@@ -22,7 +22,7 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 --task=tool --source=zip graphviz"
   - "%PYTHON%\\Scripts\\pip install pyquickhelper --no-deps"
   - "%PYTHON%\\Scripts\\pip install wcwidth guzzle_sphinx_theme backcall pyensae yahoo_historical qgrid"
-  - "%PYTHON%\\Scripts\\pymy_install3 scikit-learn scipy cffi statsmodels cytoolz Pillow"
+  - "%PYTHON%\\Scripts\\pymy_install3 scikit-learn scipy cffi statsmodels cytoolz Pillow numba"
   - "set PATH=%PATH%;C:\\projects\\jyquickhelper\\build\\update_modules\\Graphviz\\bin"
 build: off
 
