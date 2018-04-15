@@ -3,7 +3,9 @@ import sys
 import os
 import datetime
 import re
-import sphinx_redactor_theme
+# import sphinx_redactor_theme
+# import karma_sphinx_theme
+import sphinx_bootstrap_theme
 
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
@@ -24,22 +26,31 @@ local_template = os.path.join(os.path.abspath(
 
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables, get_default_stylesheet
 set_sphinx_variables(__file__, "sparkouille", "Xavier Dupré", 2018,
-                     "sphinx_redactor_theme", sphinx_redactor_theme.get_html_theme_path(),
+                     "bootstrap", sphinx_bootstrap_theme.get_html_theme_path(),
                      locals(), extlinks=dict(
                          issue=('https://github.com/sdpython/sparkouille/issues/%s', 'issue')),
                      title="sparkouille", book=True)
 
+if False:
+    html_sidebars['**'] = ['globaltoc.html', 'localtoc.html', 'relations.html',
+                           'sourcelink.html', 'searchbox.html']
+    html_sidebars['*'] = html_sidebars['**']
+    html_sidebars[''] = html_sidebars['*']
+
+html_theme_options = {
+    'touch_icon': '_static/project_ico.ico',
+}
+
 blog_root = "http://www.xavierdupre.fr/app/sparkouille/helpsphinx/"
 
 html_context = {
-    'css_files': get_default_stylesheet() + ['_static/my-styles.css'],
+    'css_files': get_default_stylesheet() + ['_static/my-styles.css', '_static/gallery.css'],
 }
+
 
 html_logo = "project_ico.png"
 
-html_sidebars = {}
-
-language = "en"
+language = "fr"
 
 mathdef_link_only = True
 

@@ -73,30 +73,53 @@ def parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False, nop
                         nopython=nopython, cache=True)(loop)
         inputs = create_array_numba(chunk_size, sigin)
         outputs = create_array_numba(chunk_size, sigout)
+
+        done = 0
+        for obs in gen:
+            if done < len(inputs):
+                inputs[done] = obs
+                done += 1
+            else:
+                loop_jit(done, inputs, outputs)
+                for out in outputs:
+                    yield out
+                done = 0
+        if 0 < done < len(inputs):
+            loop_jit(done, inputs, outputs)
+            for out in outputs:
+                yield out
+
     else:
-        fct_jit = jit(nogil=nogil, parallel=parallel,
-                      nopython=nopython, cache=True)(fct)
 
         def loop(nb, inputs, outputs):
             for i in prange(nb):
                 outputs[i] = fct_jit(inputs[i])
 
-        loop_jit = njit(nogil=nogil, parallel=parallel,
-                        nopython=nopython, cache=True)(loop)
-        inputs = [None for i in range(0, chunk_size)]
-        outputs = [None for i in range(0, chunk_size)]
+        loop_jit = None
+        fct_jit = None
 
-    done = 0
-    for obs in gen:
-        if done < len(inputs):
-            inputs[done] = obs
-            done += 1
-        else:
+        inputs = None
+        outputs = None
+
+        done = 0
+        for obs in gen:
+            if inputs is None:
+                inputs = [obs] * chunk_size
+                outputs = [fct(obs)] * chunk_size
+                loop_jit = njit(nogil=nogil, parallel=parallel,
+                                nopython=nopython, cache=True)(loop)
+                fct_jit = jit(nogil=nogil, parallel=parallel,
+                              nopython=nopython, cache=True)(fct)
+
+            if done < len(inputs):
+                inputs[done] = obs
+                done += 1
+            else:
+                loop_jit(done, inputs, outputs)
+                for out in outputs:
+                    yield out
+                done = 0
+        if 0 < done < len(inputs):
             loop_jit(done, inputs, outputs)
             for out in outputs:
                 yield out
-            done = 0
-    if 0 < done < len(inputs):
-        loop_jit(done, inputs, outputs)
-        for out in outputs:
-            yield out

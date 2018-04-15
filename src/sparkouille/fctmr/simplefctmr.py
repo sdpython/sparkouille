@@ -67,7 +67,7 @@ def take(gen, count=5, skip=0):
     @return             generator
 
     .. exref::
-        :title: mapper
+        :title: take
         :tag: progfonc
 
         .. runpython::
@@ -96,7 +96,7 @@ def ffilter(fct, gen):
     @return             generator
 
     .. exref::
-        :title: mapper
+        :title: filter
         :tag: progfonc
 
         .. runpython::
@@ -164,7 +164,7 @@ def combiner(fctkey1, gen1, fctkey2, gen2, how='inner'):
     @return                 generator
 
     .. exref::
-        :title: reducer
+        :title: combiner or join
         :tag: progfonc
 
         .. runpython::

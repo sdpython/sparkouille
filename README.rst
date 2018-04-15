@@ -22,10 +22,6 @@ README
     :alt: MIT License
     :target: http://opensource.org/licenses/MIT
 
-.. image:: https://requires.io/github/sdpython/sparkouille/requirements.svg?branch=master
-     :target: https://requires.io/github/sdpython/sparkouille/requirements/?branch=master
-     :alt: Requirements Status
-
 .. image:: https://codecov.io/github/sdpython/sparkouille/coverage.svg?branch=master
     :target: https://codecov.io/github/sdpython/sparkouille?branch=master
 

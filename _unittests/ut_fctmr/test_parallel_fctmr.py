@@ -57,12 +57,27 @@ def map_custom(input):
 
 class TestParallelFctMr(ExtTestCase):
 
-    def test_parallel_mapper(self):
+    def test_parallel_mapper_sig(self):
         def func2(x):
             return x + 1
         li = numpy.array(list(range(0, 1000000)), dtype=numpy.float64)
         out = list(parallel_mapper(
             func2, li, nogil=True, sigin='f8', sigout='f8'))
+        self.assertEqual(out[:10], [1.0, 2.0, 3.0, 4.0,
+                                    5.0, 6.0, 7.0, 8.0, 9.0, 10.0])
+        out = map_custom(li)
+        self.assertEqual(out[:10], numpy.array(
+            [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]))
+        out = list(map(func2, li))
+        self.assertEqual(out[:10], [1.0, 2.0, 3.0, 4.0,
+                                    5.0, 6.0, 7.0, 8.0, 9.0, 10.0])
+
+    def test_parallel_mapper_nosig(self):
+        def func2(x):
+            return x + 1
+        li = numpy.array(list(range(0, 1000000)), dtype=numpy.float64)
+        out = list(parallel_mapper(
+            func2, li, nogil=False, nopython=False))
         self.assertEqual(out[:10], [1.0, 2.0, 3.0, 4.0,
                                     5.0, 6.0, 7.0, 8.0, 9.0, 10.0])
         out = map_custom(li)

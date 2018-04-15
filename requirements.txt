@@ -7,7 +7,7 @@ pymyinstall
 pyquickhelper>=1.7.2508
 pyspark
 qgrid
-sphinx-redactor-theme
+sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 wheel
