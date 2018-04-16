@@ -1,0 +1,15 @@
+
+.. blogpost::
+    :title: Références sur scala
+    :keywords: scala
+    :date: 2018-04-16
+    :categories: références
+
+    Anglais
+
+    * `Scala Documentation <https://docs.scala-lang.org/tutorials/tour/pattern-matching.html.html>`_
+
+    Français
+
+    * `Apprenez la programmation avec Scala <https://openclassrooms.com/courses/apprenez-la-programmation-avec-scala/classes-et-variables>`_
+    * `Travaux pratiques - Introduction à Spark et Scala <http://cedric.cnam.fr/vertigo/Cours/RCP216/tpSparkScala.html>`_
