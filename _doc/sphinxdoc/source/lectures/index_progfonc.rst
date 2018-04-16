@@ -1,4 +1,5 @@
 
+===========================
 Programmation fonctionnelle
 ===========================
 
@@ -9,7 +10,7 @@ programme en langage fonctionnelle est beaucoup plus simple
 dans un langage et une syntaxe impérative.
 
 Introductions aux mappers et aux reducers
-+++++++++++++++++++++++++++++++++++++++++
+=========================================
 
 Même s'il n'est pas utilisé pour implémenter
 des framework map/reduce car beaucoup trop lent
@@ -26,7 +27,7 @@ de mapperrs, reducers, combiners.
     ../notebooks/recursive_reducers
 
 Algorithmes
-+++++++++++
+===========
 
 Quelques jeux autour de la programmation
 fonctionnelle et des algorithmes implémentés

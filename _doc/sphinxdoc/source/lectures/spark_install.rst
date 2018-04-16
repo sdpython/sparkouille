@@ -1,6 +1,7 @@
 
 .. _l-install-spark:
 
+==============================
 Installation de Spark en local
 ==============================
 
@@ -8,7 +9,7 @@ Installation de Spark en local
     :local:
 
 Installation de Spark sous Windows
-++++++++++++++++++++++++++++++++++
+==================================
 
 Ces instructions ont été testées le **2017/09/14**.
 Il est possible que cela change un peu dans un futur proche.
@@ -98,7 +99,7 @@ L'ensemble de ces instructions est regroupés dans le script :
 .. _l-petit-exemple-pyspark:
 
 Petit test avec wordcount
-+++++++++++++++++++++++++
+=========================
 
 Pour vérifier que tout fonctionne, on peut exécuter ce script sur n'importe quel fichier texte
 (extrait de `Apache Spark Examples <http://spark.apache.org/examples.html>`_) :
@@ -118,7 +119,7 @@ Si tout se passe bien, un répertoire *fichier.out.txt* est créé avec les fich
     part-00001
 
 Spark et notebook
-+++++++++++++++++
+=================
 
 Pour utiliser Spark depuis un notebook, il suffit de spécifier une variable d'environnement
 avant de lancer *pyspark* :
@@ -131,7 +132,7 @@ Et pour spécifier un répertoire par défaut, il suffit d'exécuter `pyspark`
 depuis ce répertoire.
 
 Installation de Spark sous Linux
-++++++++++++++++++++++++++++++++
+================================
 
 Ces instructions ont été testées le **2016/12/01**.
 Il est possible que cela change un peu dans un futur proche.
@@ -224,7 +225,7 @@ C'est souvent la première information qu'on vérifie lorsqu'une erreur se produ
 Ce tutoriel a utilisé les dernières versions disponibles.
 
 Spark DataFrame
-+++++++++++++++
+===============
 
 `Spark SQL, DataFrames and Datasets Guide <http://spark.apache.org/docs/latest/sql-programming-guide.html>`_
 
@@ -238,7 +239,7 @@ Spark DataFrame
     df.show()
 
 Script batch de lancement
-+++++++++++++++++++++++++
+=========================
 
 La liste des instructions pour lancer pyspark est assez longue et fastidieuse mais il est possible
 de l'écrire une bonne fois pour toute dans un script batch, d'extension ``.bat`` ou ``.cmd`` sous Windows
@@ -319,10 +320,10 @@ Il faut le lancer depuis le répertoire contenant les notebooks.
     pyspark
 
 Erreurs rencontrées avant les premiers scripts
-++++++++++++++++++++++++++++++++++++++++++++++
+===============================================
 
 Py4JJavaError: An error occurred while calling o162.csv.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ::
 
@@ -332,7 +333,7 @@ Py4JJavaError: An error occurred while calling o162.csv.
 Il est suggéré dans ce cas de supprimer le répertoire ``metastore_db``.
 
 Erreur : Cannot run program "python"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++++++
 
 Il vous manque probablement ``PYSPARK_PYTHON``.
 Voici ce que vous devriez avoir :
@@ -352,7 +353,7 @@ Voici ce que vous devriez avoir :
     _SPARK_CMD_USAGE         = Usage: bin\pyspark.cmd [options]
 
 The trust relationship between this workstation and the primary domain failed (Windows)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Cette survient lorsqu'on exécute :
 
@@ -366,17 +367,17 @@ une solution sans vraiment expliquer le problème. Dans mon cas, j'ai créé un 
 sur l'ordinateur et je l'ai supprimé. J'ai redémarré l'ordinateur et cela a disparu.
 
 Erreurs rencontrées durant l'exécution des premiers scripts
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===========================================================
 
 Erreur : Output directory  file:/... already exists
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Spark n'aime pas écrire des données dans un RDD qui existe déjà.
 Il faut le supprimer. Tout dépend de l'environnement où on se trouve,
 sur Hadoop ou en local.
 
 Failed to start database 'metastore_db' with class loader
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ::
 

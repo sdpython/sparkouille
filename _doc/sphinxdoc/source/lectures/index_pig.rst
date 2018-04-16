@@ -1,6 +1,7 @@
 
+===================
 Introduction à PIG
-==================
+===================
 
 Ces notebooks ont servi de supports à un cours
 données à l':epkg:`ENSAE` entre 2015 et 2016.
@@ -9,7 +10,7 @@ Les distributions :epkg:`Cloudera` et :epkg:`HortonWork` (Azure)
 étaient disponibles à l'époque.
 
 Premier pas avec Cloudera et Azure
-++++++++++++++++++++++++++++++++++
+==================================
 
 Les quatre premiers notebooks montrent les différences
 entre les deux distributions pour les opérations les plus
@@ -31,7 +32,7 @@ distance.
     ../notebooks/pig_azure_correction
 
 Streaming et paramètres
-+++++++++++++++++++++++
+=======================
 
 Streaming au sens de PIG, c'est à dire la possibilité
 de programmer une sorte de *mapper* ou de *reducer*
@@ -52,7 +53,7 @@ qui changent à chaque exécution.
     ../notebooks/pig_params_azure_correction
 
 Algorithmes
-+++++++++++
+===========
 
 Le hasard est doublement compliqué en environnement
 distribuée et sur des grandes données. Le
