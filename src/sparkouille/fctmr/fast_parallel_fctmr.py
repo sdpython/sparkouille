@@ -30,8 +30,8 @@ def create_array_numba(nb, sig):
             "Cannot create a container for type '{0}'.".format(sig))
 
 
-def parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False, nopython=True,
-                    sigin=None, sigout=None):
+def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False, nopython=True,
+                         sigin=None, sigout=None):
     """
     Parallelizes a mapper based on :epkg:`numba` and more specifically
     `Automatic parallelization with @jit <https://numba.pydata.org/numba-doc/dev/user/parallel.html>`_.

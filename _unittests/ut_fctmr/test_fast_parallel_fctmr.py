@@ -40,7 +40,7 @@ except ImportError:
     import pyquickhelper as skip_
 
 from pyquickhelper.pycode import ExtTestCase
-from src.sparkouille.fctmr.parallel_fctmr import parallel_mapper
+from src.sparkouille.fctmr.fast_parallel_fctmr import fast_parallel_mapper
 
 
 @njit(parallel=False, nopython=True, nogil=True)
@@ -61,7 +61,7 @@ class TestParallelFctMr(ExtTestCase):
         def func2(x):
             return x + 1
         li = numpy.array(list(range(0, 1000000)), dtype=numpy.float64)
-        out = list(parallel_mapper(
+        out = list(fast_parallel_mapper(
             func2, li, nogil=True, sigin='f8', sigout='f8'))
         self.assertEqual(out[:10], [1.0, 2.0, 3.0, 4.0,
                                     5.0, 6.0, 7.0, 8.0, 9.0, 10.0])
@@ -76,7 +76,7 @@ class TestParallelFctMr(ExtTestCase):
         def func2(x):
             return x + 1
         li = numpy.array(list(range(0, 1000000)), dtype=numpy.float64)
-        out = list(parallel_mapper(
+        out = list(fast_parallel_mapper(
             func2, li, nogil=False, nopython=False))
         self.assertEqual(out[:10], [1.0, 2.0, 3.0, 4.0,
                                     5.0, 6.0, 7.0, 8.0, 9.0, 10.0])
