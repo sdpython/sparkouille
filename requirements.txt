@@ -4,7 +4,7 @@ guzzle_sphinx_theme
 jyquickhelper
 pyensae
 pymyinstall
-pyquickhelper>=1.8
+pyquickhelper>=1.8.2602
 pyspark
 qgrid
 sphinx_bootstrap_theme
