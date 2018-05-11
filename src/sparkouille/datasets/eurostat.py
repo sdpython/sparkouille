@@ -67,11 +67,12 @@ def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-po
             f.write(content)
 
     def format_age(s):
+        "local function"
         if s.startswith("Y_"):
             if s.startswith("Y_LT"):
-                s = "YLT" + s[4:]
+                return "YLT" + s[4:]
             elif s.startswith("Y_GE"):
-                s = "YGE" + s[4:]
+                return "YGE" + s[4:]
             else:
                 raise SyntaxError(s)
         else:
@@ -79,11 +80,12 @@ def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-po
             return "Y%02d" % i
 
     def format_age_num(s):
+        "local function"
         if s.startswith("Y_"):
             if s.startswith("Y_LT"):
-                s = float(s.replace("Y_LT", ""))
+                return float(s.replace("Y_LT", ""))
             elif s.startswith("Y_GE"):
-                s = float(s.replace("Y_GE", ""))
+                return float(s.replace("Y_GE", ""))
             else:
                 raise SyntaxError(s)
         else:
@@ -91,6 +93,7 @@ def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-po
             return float(i)
 
     def format_value(s):
+        "local function"
         if s.strip() == ":":
             return numpy.nan
         else:

@@ -66,6 +66,7 @@ def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False
                       nopython=nopython, cache=True)(fct)
 
         def loop(nb, inputs, outputs):
+            "local function"
             for i in prange(nb):
                 outputs[i] = fct_jit(inputs[i])
 
@@ -92,6 +93,7 @@ def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False
     else:
 
         def loop(nb, inputs, outputs):
+            "local function"
             for i in prange(nb):
                 outputs[i] = fct_jit(inputs[i])
 

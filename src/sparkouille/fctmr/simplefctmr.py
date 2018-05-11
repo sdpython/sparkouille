@@ -184,6 +184,7 @@ def combiner(fctkey1, gen1, fctkey2, gen2, how='inner'):
     gr2 = reducer(fctkey2, gen2, asiter=False, sort=True)
 
     def fetch_next(it):
+        "local function"
         try:
             return next(it)
         except StopIteration:
