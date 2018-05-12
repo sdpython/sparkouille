@@ -31,7 +31,8 @@ import src.sparkouille
 class TestFunctionTestNotebookSql(unittest.TestCase):
 
     def setUp(self):
-        add_missing_development_version(["jyquickhelper", "pymyinstall"], __file__, hide=True)
+        add_missing_development_version(
+            ["jyquickhelper", "pymyinstall"], __file__, hide=True)
 
     def test_notebook_example_sql(self):
         fLOG(
