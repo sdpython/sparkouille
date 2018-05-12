@@ -5,6 +5,9 @@
 import sys
 import os
 import unittest
+from pyquickhelper.loghelper import fLOG
+from pyquickhelper.filehelper import explore_folder_iterfile
+from pyquickhelper.ipythonhelper import upgrade_notebook, remove_execution_number
 
 
 try:
@@ -19,11 +22,6 @@ except ImportError:
     if path not in sys.path:
         sys.path.append(path)
     import src
-
-
-from pyquickhelper.loghelper import fLOG
-from pyquickhelper.filehelper import explore_folder_iterfile
-from pyquickhelper.ipythonhelper import upgrade_notebook, remove_execution_number
 
 
 class TestConvertNotebooks(unittest.TestCase):
