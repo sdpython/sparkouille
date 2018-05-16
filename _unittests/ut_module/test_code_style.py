@@ -25,7 +25,8 @@ except ImportError:
 class TestCodeStyle(ExtTestCase):
 
     def setUp(self):
-        add_missing_development_version(["jyquickhelper", "pymyinstall"], __file__, hide=True)
+        add_missing_development_version(
+            ["jyquickhelper", "pymyinstall"], __file__, hide=True)
 
     def test_style_src(self):
         thi = os.path.abspath(os.path.dirname(__file__))
