@@ -37,8 +37,7 @@ README
     :target: http://www.xavierdupre.fr/app/sparkouille/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
-*sparkouille* implements a couple of ways to productionize
-machine learning predictions.
+*sparkouille* contains material for teachings about *Spark*.
 
 *not ready*
 
