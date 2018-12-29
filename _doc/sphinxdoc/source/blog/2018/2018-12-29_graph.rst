@@ -1,0 +1,31 @@
+
+.. blogpost::
+    :title: GraphFrames
+    :keywords: spark
+    :date: 2018-12-29
+    :categories: références
+
+    Les graphes sont toujours compliqués en MapReduce,
+    `GraphFrames <https://graphframes.github.io/index.html>`_.
+    Ca n'a pas l'air trop mal
+    `A Gentle Intro To Graph Analytics With GraphFrames <https://www.jowanza.com/blog/a-gentle-intro-to-graph-analytics-with-graphframes>`_
+    mais il est difficile de comprendre en quoi la solution
+    se distingue d'un `neo4j <https://neo4j.com/>`_.
+    En fait, je ne suis pas sûr que ce type de solution permettent
+    de résoudre tous les problèmes. Le coût réseau
+    `Groute performance vs. Gunrock <https://gunrock.github.io/docs/groute.html>`_
+    est très important pour les graphes car il faut pouvoir accéder
+    à n'importe quelle partie. Je crois plutôt à des grosses machines
+    avec pas mal de coeurs et des librairies écrites en C++.
+    Je m'interroge sur des trucs de ce style
+    `Charm++ <http://charm.cs.illinois.edu/research/charm>`_ ou
+    `Presto: Distributed Machine Learning and Graph Processing with Sparse Matrices <http://shivaram.org/publications/presto-eurosys13.pdf>`_.
+    Un autre article
+    `High-Level Programming Abstractions for Distributed Graph Processing <https://arxiv.org/pdf/1607.02646.pdf>`_
+    à lire sans doute (ça aussi `MapReduce formulation of PageRank <http://maartenfokkinga.github.io/utwente/mmf2010e.pdf>`_)
+    `Lemon <https://lemon.cs.elte.hu/trac/lemon>`_.
+    J'ai trouvé ça aussi
+    `teexgraph <https://github.com/franktakes/teexgraph>`_ mais
+    le code n'a pas l'air terrible (double, pas float et autres défauts).
+    Bref, pour les très gros graphes, la ruse
+    a encore quelques beaux jours.
