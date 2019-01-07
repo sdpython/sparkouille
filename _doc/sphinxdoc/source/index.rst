@@ -5,7 +5,22 @@
 Spark approximatif
 ==================
 
-**Links:** `github <https://github.com/sdpython/sparkouille/>`_,
+Lectures, notebooks, helpers pour :epkg:`Spark`.
+
+.. toctree::
+    :maxdepth: 1
+
+    lectures/index_progfonc
+    lectures/index_spark
+    lectures/index_sql
+    lectures/index_pig
+    tutorial/index
+    api/index
+    i_ex
+    all_notebooks
+    i_index
+
+`github <https://github.com/sdpython/sparkouille/>`_,
 `documentation <http://www.xavierdupre.fr/app/sparkouille/helpsphinx/index.html>`_,
 :ref:`l-README`,
 :ref:`blog <ap-main-0>`
@@ -42,21 +57,6 @@ Spark approximatif
 .. image:: nbcov.png
     :target: http://www.xavierdupre.fr/app/sparkouille/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
-
-Lectures, notebooks, helpers pour :epkg:`Spark`.
-
-.. toctree::
-    :maxdepth: 1
-
-    lectures/index_progfonc
-    lectures/index_spark
-    lectures/index_sql
-    lectures/index_pig
-    tutorial/index
-    api/index
-    i_ex
-    all_notebooks
-    i_index
 
 +----------------------+---------------------+---------------------+--------------------+------------------------+------------------------------------------------+
 | :ref:`l-modules`     |  :ref:`l-functions` | :ref:`l-classes`    | :ref:`l-methods`   | :ref:`l-staticmethods` | :ref:`l-properties`                            |
