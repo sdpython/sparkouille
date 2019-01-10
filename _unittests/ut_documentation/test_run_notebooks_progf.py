@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@brief      test log(time=121s)
+@brief      test log(time=51s)
 """
 
 import sys
@@ -33,7 +33,7 @@ class TestFunctionTestNotebookProgf(unittest.TestCase):
     def setUp(self):
         add_missing_development_version(["jyquickhelper"], __file__, hide=True)
 
-    def test_notebook_example_progf_reservoir(self):
+    def test_notebook_progf_reservoir(self):
         fLOG(
             __file__,
             self._testMethodName,
@@ -45,7 +45,7 @@ class TestFunctionTestNotebookProgf(unittest.TestCase):
         test_notebook_execution_coverage(__file__, "reservoir", folder,
                                          this_module_name="sparkouille", fLOG=fLOG)
 
-    def test_notebook_example_progf_skewed(self):
+    def test_notebook_progf_skewed(self):
         fLOG(
             __file__,
             self._testMethodName,
@@ -55,6 +55,18 @@ class TestFunctionTestNotebookProgf(unittest.TestCase):
         folder = os.path.join(os.path.dirname(__file__),
                               "..", "..", "_doc", "notebooks", "progf")
         test_notebook_execution_coverage(__file__, "skewed", folder,
+                                         this_module_name="sparkouille", fLOG=fLOG)
+
+    def test_notebook_progf_reducers(self):
+        fLOG(
+            __file__,
+            self._testMethodName,
+            OutputPrint=__name__ == "__main__")
+
+        self.assertTrue(src.sparkouille is not None)
+        folder = os.path.join(os.path.dirname(__file__),
+                              "..", "..", "_doc", "notebooks", "progf")
+        test_notebook_execution_coverage(__file__, "reducers", folder,
                                          this_module_name="sparkouille", fLOG=fLOG)
 
 
