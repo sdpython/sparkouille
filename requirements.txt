@@ -2,6 +2,7 @@ chardet
 coverage
 guzzle_sphinx_theme
 jyquickhelper
+pandas_datareader
 pyensae
 pymyinstall
 pyquickhelper>=1.8.2602
