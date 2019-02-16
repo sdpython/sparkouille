@@ -1,9 +1,4 @@
 
-.. _l-README:
-
-README
-======
-
 .. image:: https://travis-ci.org/sdpython/sparkouille.svg?branch=master
     :target: https://travis-ci.org/sdpython/sparkouille
     :alt: Build status
@@ -37,11 +32,14 @@ README
     :target: http://www.xavierdupre.fr/app/sparkouille/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
-*sparkouille* contains material for teachings about *Spark*.
+.. _l-README:
 
-*not ready*
+sparkouille
+===========
 
-**Links:**
+Initially in `ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html>`_
+and split because it became too big.
+It contains material for teachings about *Spark* in French.
 
 * `GitHub/sparkouille <https://github.com/sdpython/sparkouille/>`_
 * `documentation <http://www.xavierdupre.fr/app/sparkouille/helpsphinx/index.html>`_
