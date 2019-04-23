@@ -1,25 +1,10 @@
 """
 @brief      test log(time=0s)
 """
-
-import sys
 import os
 import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import check_pep8, ExtTestCase, add_missing_development_version
-
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
 
 
 class TestCodeStyle(ExtTestCase):
@@ -40,15 +25,8 @@ class TestCodeStyle(ExtTestCase):
         check_pep8(test, fLOG=fLOG, neg_pattern="temp_.*",
                    pylint_ignore=('C0103', 'C1801', 'R0201', 'R1705', 'W0108', 'W0613',
                                   'C0111', 'C0412', 'C0411'),
-                   skip=["src' imported but unused",
-                         "skip_' imported but unused",
-                         "skip__' imported but unused",
-                         "skip___' imported but unused",
-                         "Unused variable 'skip_'",
-                         "imported as skip_",
-                         "Redefining built-in 'input'",
+                   skip=["Redefining built-in 'input'",
                          "Non-iterable value prange",
-                         "Unused import src",
                          ])
 
 
