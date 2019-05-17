@@ -6,7 +6,7 @@ import os
 import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.ipythonhelper import test_notebook_execution_coverage
-from pyquickhelper.pycode import add_missing_development_version
+from pyquickhelper.pycode import add_missing_development_version, skipif_circleci
 import sparkouille
 
 
@@ -16,6 +16,7 @@ class TestFunctionTestNotebookTimeSeries(unittest.TestCase):
         add_missing_development_version(
             ["jyquickhelper", "pymyinstall"], __file__, hide=True)
 
+    @skipif_circleci("does not end on circleci")
     def test_notebook_map_reduce_timeseries(self):
         fLOG(
             __file__,
