@@ -2,15 +2,14 @@ chardet
 coverage
 guzzle_sphinx_theme
 jyquickhelper
+numpy>=1.16
 pandas_datareader
 pyensae
 pymyinstall
-pyquickhelper>=1.8.2602
+pyquickhelper>=1.9
 pyspark
 qgrid
 sphinx_bootstrap_theme
-sphinxjp.themes.basicstrap
-sphinxjp.themes.sphinxjp
 wheel
 yahoo_historical
 
