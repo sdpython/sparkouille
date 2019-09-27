@@ -22,7 +22,7 @@ class TestFunctionTestNotebookSql(unittest.TestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
 
-        import pymyinstall
+        import pymyinstall  # pylint: disable=C0415
         self.assertTrue(sparkouille is not None)
         folder = os.path.join(os.path.dirname(__file__),
                               "..", "..", "_doc", "notebooks", "sql")
