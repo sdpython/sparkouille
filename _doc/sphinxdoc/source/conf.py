@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
 local_template = os.path.join(os.path.abspath(
     os.path.dirname(__file__)), "phdoc_templates")
 
-set_sphinx_variables(__file__, "sparkouille", "Xavier Dupré", 2019,
+set_sphinx_variables(__file__, "sparkouille", "Xavier Dupré", 2020,
                      "bootstrap", sphinx_bootstrap_theme.get_html_theme_path(),
                      locals(), extlinks=dict(
                          issue=('https://github.com/sdpython/sparkouille/issues/%s', 'issue')),
@@ -48,7 +48,7 @@ html_context = {
 }
 
 
-html_logo = "project_ico.png"
+html_logo = "phdoc_static/project_ico.png"
 
 language = "fr"
 
