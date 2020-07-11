@@ -30,20 +30,25 @@ def create_array_numba(nb, sig):
             "Cannot create a container for type '{0}'.".format(sig))
 
 
-def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False, nopython=True,
+def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True,
+                         nogil=False, nopython=True,
                          sigin=None, sigout=None):
     """
     Parallelizes a mapper based on :epkg:`numba` and more specifically
-    `Automatic parallelization with @jit <https://numba.pydata.org/numba-doc/dev/user/parallel.html>`_.
+    `Automatic parallelization with @jit <https://numba.pydata.org/
+    numba-doc/dev/user/parallel.html>`_.
     This page indicates what :epkg:`numba` optimizes when
     it parallizes a map.
 
     @param      fct         function
     @param      gen         generator
     @param      chunk_size  see :ref:`l-parallel-mapper-chunk-size`
-    @param      parallel    see `parallel <http://numba.pydata.org/numba-doc/latest/user/jit.html?highlight=nopython#parallel>`_
-    @param      nopython    see `nopython <http://numba.pydata.org/numba-doc/latest/user/jit.html?highlight=nopython#nopython>`_
-    @param      nogil       see `nogil <http://numba.pydata.org/numba-doc/latest/user/jit.html?highlight=nopython#nogil>`_
+    @param      parallel    see `parallel <http://numba.pydata.org/numba-doc/latest/
+                            user/jit.html?highlight=nopython#parallel>`_
+    @param      nopython    see `nopython <http://numba.pydata.org/numba-doc/
+                            latest/user/jit.html?highlight=nopython#nopython>`_
+    @param      nogil       see `nogil <http://numba.pydata.org/numba-doc/
+                            latest/user/jit.html?highlight=nopython#nogil>`_
     @param      sigin       signature of input type
     @param      sigout      signature of output type
 
@@ -56,7 +61,8 @@ def fast_parallel_mapper(fct, gen, chunk_size=100000, parallel=True, nogil=False
     the genericity of the mapper. :epkg:`python`
     is not a good language to do that.
     See unit test
-    `test_parallel_fctmr.py <https://github.com/sdpython/sparkouille/blob/master/_unittests/ut_fctmr/test_parallel_fctmr.py>`_.
+    `test_parallel_fctmr.py <https://github.com/sdpython/sparkouille/blob/
+    master/_unittests/ut_fctmr/test_parallel_fctmr.py>`_.
     """
     if sigin is not None and sigout is not None:
         sig1 = '{0}({1})'.format(sigout, sigin)

@@ -11,20 +11,25 @@ import pyensae
 from pyquickhelper.loghelper import noLOG
 
 
-def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?file=data/",
-                              name="demo_mlifetable.tsv.gz", final_name="mortalite.txt",
-                              whereTo=".", stop_at=None, fLOG=noLOG):
+def table_mortalite_euro_stat(
+        url="http://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?file=data/",
+        name="demo_mlifetable.tsv.gz", final_name="mortalite.txt",
+        whereTo=".", stop_at=None, fLOG=noLOG):
     """
-    This function retrieves mortality table from `EuroStat <http://ec.europa.eu/eurostat/fr>`_ through
-    `table de mortalité <http://www.data-publica.com/opendata/7098--population-et-conditions-sociales-table-de-mortalite-de-1960-a-2010>`_
-    (*this link is currently broken, data-publica does not provide such a database anymore, a copy is provided*).
+    This function retrieves mortality table from `EuroStat
+    <http://ec.europa.eu/eurostat/fr>`_ through
+    `table de mortalité <http://www.data-publica.com/
+    opendata/7098--population-et-conditions-sociales-table-de-mortalite-de-1960-a-2010>`_
+    (*this link is currently broken, data-publica does not provide
+    such a database anymore, a copy is provided*).
 
     @param      url         data source
     @param      name        data table name
     @param      final_name  the data is compressed, it needs to be uncompressed into a file,
                             this parameter defines its name
     @param      whereTo     data needs to be downloaded, location of this place
-    @param      stop_at     the overall process is quite long, if not None, it only keeps the first rows
+    @param      stop_at     the overall process is quite long, if not None,
+                            it only keeps the first rows
     @param      fLOG        logging function
     @return                 data_frame
 
@@ -42,8 +47,8 @@ def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-po
         ['annee', 'valeur', 'age', 'age_num', 'indicateur', 'genre', 'pays']
 
     Columns *age* and *age_num* look alike. *age_num* is numeric and is equal
-    to *age* except when *age_num* is 85. Everybody above that age fall into the same category.
-    The table contains many indicators:
+    to *age* except when *age_num* is 85. Everybody above that age
+    fall into the same category. The table contains many indicators:
 
     * PROBSURV: Probabilité de survie entre deux âges exacts (px)
     * LIFEXP: Esperance de vie à l'âge exact (ex)
@@ -71,33 +76,28 @@ def table_mortalite_euro_stat(url="http://ec.europa.eu/eurostat/estat-navtree-po
         if s.startswith("Y_"):
             if s.startswith("Y_LT"):
                 return "YLT" + s[4:]
-            elif s.startswith("Y_GE"):
+            if s.startswith("Y_GE"):
                 return "YGE" + s[4:]
-            else:
-                raise SyntaxError(s)
-        else:
-            i = int(s.strip("Y"))
-            return "Y%02d" % i
+            raise SyntaxError(s)  # pragma: no cover
+        i = int(s.strip("Y"))
+        return "Y%02d" % i
 
     def format_age_num(s):
         "local function"
         if s.startswith("Y_"):
             if s.startswith("Y_LT"):
                 return float(s.replace("Y_LT", ""))
-            elif s.startswith("Y_GE"):
+            if s.startswith("Y_GE"):
                 return float(s.replace("Y_GE", ""))
-            else:
-                raise SyntaxError(s)
-        else:
-            i = int(s.strip("Y"))
-            return float(i)
+            raise SyntaxError(s)  # pragma: no cover
+        i = int(s.strip("Y"))
+        return float(i)
 
     def format_value(s):
         "local function"
         if s.strip() == ":":
             return numpy.nan
-        else:
-            return float(s.strip(" ebp"))
+        return float(s.strip(" ebp"))
 
     fLOG("step 0, reading")
     dff = pandas.read_csv(temp, sep="\t", encoding="utf8")
