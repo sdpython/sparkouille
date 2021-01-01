@@ -11,7 +11,8 @@ init:
 install:
   - "%PYTHON%\\python -m pip install --upgrade pip"
   - "%PYTHON%\\Scripts\\pip install pymyinstall"
-  - "%PYTHON%\\Scripts\\pymy_install3 llvmlite numba"
+  - "%PYTHON%\\Scripts\\pymy_install3 llvmlite"
+  - "%PYTHON%\\Scripts\\pip install numba --no-deps"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
   - set PYTHONPATH=src
