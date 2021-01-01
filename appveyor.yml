@@ -12,7 +12,8 @@ install:
   - "%PYTHON%\\python -m pip install --upgrade pip"
   - "%PYTHON%\\Scripts\\pip install pymyinstall numpy wheel"
   - "%PYTHON%\\Scripts\\pymy_install3 llvmlite"
-  - "%PYTHON%\\Scripts\\pip install --no-deps numba"
+  - "%PYTHON%\\Scripts\\pip install --no-deps numba cffi cython"
+  - "%PYTHON%\\Scripts\\pip install pyspark"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
   - set PYTHONPATH=src
