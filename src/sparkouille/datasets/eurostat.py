@@ -63,7 +63,8 @@ def table_mortalite_euro_stat(
 
     temp = final_name + ".remove.txt"
     if not os.path.exists(temp) or os.stat(temp).st_size < 1e7:
-        local = pyensae.datasource.download_data(name, url=url, whereTo=whereTo)
+        local = pyensae.datasource.download_data(
+            name, url=url, whereTo=whereTo)
         local = local[0] + ".gz"
         with gzip.open(local, 'rb') as f:
             file_content = f.read()

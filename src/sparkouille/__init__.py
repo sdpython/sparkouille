@@ -4,7 +4,7 @@
 @brief Around :epkg:`Spark`.
 """
 
-__version__ = "0.2.86"
+__version__ = "0.2.89"
 __author__ = "Xavier Dupré"
 
 
