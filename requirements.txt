@@ -10,7 +10,7 @@ pycodestyle
 pyensae
 pylint>=2.4.2
 pymyinstall
-pyquickhelper>=1.9
+pyquickhelper>=1.10
 pyspark
 qgrid
 sphinx

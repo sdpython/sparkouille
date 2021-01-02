@@ -3,6 +3,7 @@ Cython
 cytoolz
 datashape
 jupyter
+llvmlite>=0.35
 matplotlib
 notebook>=5.0.0
 numba
