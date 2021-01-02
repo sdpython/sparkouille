@@ -2,17 +2,17 @@ image:
   - Visual Studio 2019
 environment:
   matrix:
-    - PYTHON: "C:\\Python39-x64"
-      PYTHON_VERSION: "3.9.x"
+    - PYTHON: "C:\\Python38-x64"
+      PYTHON_VERSION: "3.8.x"
       PYTHON_ARCH: "64"
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
   - "%PYTHON%\\python -m pip install --upgrade pip"
-  - "%PYTHON%\\Scripts\\pip install pymyinstall numpy wheel"
-  - "%PYTHON%\\Scripts\\pymy_install3 llvmlite pywinpty numba"
-  - "%PYTHON%\\Scripts\\pip install --no-deps cffi cython"
+  # - "%PYTHON%\\Scripts\\pip install pymyinstall numpy wheel"
+  # - "%PYTHON%\\Scripts\\pymy_install3 llvmlite pywinpty numba"
+  # - "%PYTHON%\\Scripts\\pip install --no-deps cffi cython"
   - "%PYTHON%\\Scripts\\pip install pyspark"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
