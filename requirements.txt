@@ -15,6 +15,7 @@ scipy
 Sphinx
 statsmodels
 toolz
+wheel
 
 # other dependencies
 autopep8
@@ -22,8 +23,6 @@ chardet
 coverage
 jupyter_sphinx
 jyquickhelper
-matplotlib
-numpy>=1.16
 pandas_datareader
 pycodestyle
 pydata_sphinx_theme
@@ -33,9 +32,7 @@ pymyinstall
 pyquickhelper>=1.10
 pyspark
 qgrid
-sphinx
 sphinxcontrib.imagesvg
 sphinx_bootstrap_theme
-wheel
 yahoo_historical
 
