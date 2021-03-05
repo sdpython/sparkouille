@@ -6,4 +6,4 @@
     :categories: modules
 
     First content from
-    `ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html>`_.
+    `ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/index.html>`_.

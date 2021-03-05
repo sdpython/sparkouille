@@ -33,7 +33,7 @@
 sparkouille
 ===========
 
-Initially in `ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html>`_
+Initially in `ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/index.html>`_
 and split because it became too big.
 It contains material for teachings about *Spark* in French.
 
