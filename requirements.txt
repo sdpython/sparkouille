@@ -30,6 +30,7 @@ pyensae
 pylint>=2.4.2
 pymyinstall
 pyquickhelper>=1.10.3519
+pyquicksetup
 pyspark
 qgrid
 sphinxcontrib.imagesvg
