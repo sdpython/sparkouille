@@ -1,6 +1,6 @@
 
-.. image:: https://travis-ci.org/sdpython/sparkouille.svg?branch=master
-    :target: https://travis-ci.org/sdpython/sparkouille
+.. image:: https://travis-ci.com/sdpython/sparkouille.svg?branch=master
+    :target: https://travis-ci.com/sdpython/sparkouille
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/chiwkjr9li91qd02?svg=true
