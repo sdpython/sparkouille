@@ -26,7 +26,7 @@ Lectures, notebooks, helpers pour :epkg:`Spark`.
 :ref:`blog <ap-main-0>`
 
 .. image:: https://travis-ci.com/sdpython/sparkouille.svg?branch=master
-    :target: https://travis-ci.com/sdpython/sparkouille
+    :target: https://app.travis-ci.com/github/sdpython/sparkouille
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/chiwkjr9li91qd02?svg=true
