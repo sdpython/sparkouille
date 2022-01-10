@@ -6,7 +6,7 @@ datashape
 jupyter
 llvmlite
 matplotlib
-nbconvert!=6.3.0
+nbconvert>=6.0.7,!=6.3.0,!=6.4.0,!=6.5.0
 notebook>=5.0.0
 numba
 numpy>=1.16.0
