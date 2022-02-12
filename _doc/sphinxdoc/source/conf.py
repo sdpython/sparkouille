@@ -12,7 +12,7 @@ local_template = os.path.join(os.path.abspath(
     os.path.dirname(__file__)), "phdoc_templates")
 
 set_sphinx_variables(__file__, "sparkouille", "Xavier Dupré", 2022,
-                     "pydata_sphinx_theme", pydata_sphinx_theme.get_html_theme_path(),
+                     "pydata_sphinx_theme", ['_static'],
                      locals(), extlinks=dict(
                          issue=('https://github.com/sdpython/sparkouille/issues/%s', 'issue')),
                      title="sparkouille", book=True)
