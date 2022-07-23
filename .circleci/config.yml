@@ -15,13 +15,6 @@ jobs:
           - v2-dependencies-
 
       - run:
-          name: Install tex
-          command: |
-                    sudo apt-get install -y texlive
-                    sudo apt-get install -y texlive-latex-extra
-                    sudo apt-get install -y dvipng
-          
-      - run:
           name: Install 7z, unrar
           command: |
                     sudo apt-get install -y p7zip-full
