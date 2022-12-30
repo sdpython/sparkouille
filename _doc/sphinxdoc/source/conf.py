@@ -13,8 +13,9 @@ local_template = os.path.join(os.path.abspath(
 
 set_sphinx_variables(__file__, "sparkouille", "Xavier Dupré", 2022,
                      "pydata_sphinx_theme", ['_static'],
-                     locals(), extlinks=dict(
-                         issue=('https://github.com/sdpython/sparkouille/issues/%s', 'issue')),
+                     locals(), extlinks=dict(issue=(
+                         'https://github.com/sdpython/sparkouille/issues/%s',
+                         'issue %s')),
                      title="sparkouille", book=True)
 
 blog_root = "http://www.xavierdupre.fr/app/sparkouille/helpsphinx/"
